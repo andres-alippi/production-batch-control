@@ -9,13 +9,13 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.container {
+section {
   display: flex;
   /* justify-content: space-evenly;
   width: 100vw; */
 }
 
-.container > section {
+section > div {
   flex: 1;
 }
 
@@ -32,18 +32,6 @@ body {
   min-width: 600px;
   /* margin: 20px 10px 0px 10; */
   /* position: relative; */
-}
-
-#panel {
-  border: 1px solid blue;
-}
-
-#form {
-  /* max-width: 500px; */
-}
-
-#form h2 {
-  margin-top: 0;
 }
 
 input {
