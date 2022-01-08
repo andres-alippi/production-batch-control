@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f2f5;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: flex;
+  /* justify-content: space-evenly;
+  width: 100vw; */
+}
+
+.container > section {
+  flex: 1;
+}
+
+.table-label {
+  color: red;
+}
+
+.new-product {
+  background: #f0f2f5;
+  padding: 2.4rem;
+  /*Opcional, Mayk não deixou*/
+  width: 90%;
+  /* max-width: 800px; */
+  min-width: 600px;
+  /* margin: 20px 10px 0px 10; */
+  /* position: relative; */
+}
+
+#panel {
+  border: 1px solid blue;
+}
+
+#form {
+  /* max-width: 500px; */
+}
+
+#form h2 {
+  margin-top: 0;
+}
+
+input {
+  border: none;
+  border-radius: 0.2rem;
+
+  padding: 0.8rem;
+  width: 100%;
+}
+
+.input-group {
+  margin-top: 0.8rem;
+}
+
+.input-group.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background: white;
+}
+
+.table-container {
+  min-width: 600px;
+}

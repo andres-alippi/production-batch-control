@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sistema de Gestão</title>
+  </head>
+  <body>
+    <header>
+      <h1>Sistema de Gestão</h1>
+    </header>
+    <main class="container">
+      <section id="panel">
+        <div class="new-product">
+          <div class="form">
+            <h2>Novo Produto</h2>
+            <form action="" onsubmit="Form.submit(event)">
+              <div class="input-group">
+                <label class="table-label" for="product">Produto</label>
+                <input
+                  type="text"
+                  name="product"
+                  id="product"
+                  placeholder="categoria de produto"
+                />
+              </div>
+              <div class="input-group">
+                <label class="table-label" for="color-type">Cor / Tipo</label>
+                <input
+                  type="text"
+                  name="color-type"
+                  id="color-type"
+                  placeholder="cor ou tipo de produto"
+                />
+              </div>
+              <div class="input-group">
+                <label class="table-label" for="departure">N° Partida</label>
+                <input type="text" name="departure" id="departure" readonly />
+              </div>
+              <div class="input-group">
+                <label class="table-label" for="batch">N° Lote</label>
+                <input type="text" name="batch" id="batch" readonly />
+              </div>
+              <div class="input-group">
+                <label class="table-label" for="date">Data</label>
+                <input type="date" name="date" id="date" readonly />
+              </div>
+              <div class="input-group">
+                <label class="table-label" for="day">Dia</label>
+                <input type="text" name="day" id="day" readonly />
+              </div>
+              <div class="input-group">
+                <label class="table-label" for="uk">UK</label>
+                <input type="number" name="uk" id="uk" />
+              </div>
+              <div class="input-group">
+                <label class="table-label" for="weight">Peso</label>
+                <input type="number" name="weight" id="weight" />
+              </div>
+              <div class="input-group actions">
+                <button type="reset">Cancelar</button>
+                <button>Salvar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="data-sheet">
+        <div>
+          <h2>Tabela de Registros</h2>
+        </div>
+        <div class="table-container">
+          <table id="storaged-registries">
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Cor / Tipo</th>
+              <th>N° Partida</th>              
+              <th>N° Lote</th>
+              <th>Data</th>
+              <th>Dia</th>
+              <th>UK</th>
+              <th>Peso</th>
+            </tr>
+            <tbody></tbody>
+          </thead>
+        </table>
+        </div>
+        
+        
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
