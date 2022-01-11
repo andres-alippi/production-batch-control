@@ -42,6 +42,9 @@ const DOM = {
       <td>${registry.day}</td>
       <td>${registry.uk}</td>
       <td>${registry.weight}</td>
+      <td>
+        <a href="#" onclick="Registry.remove(${index})">Remover</a>
+      </td>
     `
     return html
   },
@@ -116,6 +119,7 @@ const App = {
   },
   reload() {
     DOM.clearRegistries()
+
     App.init()
   }
 }
